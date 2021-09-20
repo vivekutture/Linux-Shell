@@ -14,10 +14,10 @@ int main()
 	char *arr[MAX_LEN]; // stores each seperated word
 	char path[MAX_LEN]; // stores command path
 	system("clear"); // clears the terminal
-	printf("WELCOME!!! to My Shell\n\nMy name is Vivek Utture\n\nI've created this Linux Shell where basic Linux Commands can be executed\n\nDownload the source code from https://github.com/vivekutture/Linux-Shell.git\n\n\033[1mTo return to the Orignal Shell enter \033[3m\033[4mEXIT\033[m \n\n"); // Here \033 is Esc character and ASCII 27 is followed by [, then zero or more numbers separated by ; describe the color and format to switch to from that point onwards and finally the letter m. (Here, '1' is for Bold,'3' is for Italic, '4' is for Underline & '\033[m' is to RESET every formatting.)
+	printf("WELCOME!!! to My Shell\n\nMy name is Vivek Utture\n\nI've created this Linux Shell where basic Linux Commands can be executed\n\nDownload the source code from https://github.com/vivekutture/Linux-Shell.git\n\n\033[1mTo return to the Orignal Shell enter \033[3m\033[4mexit\033[m \n\n"); // Here \033 is Esc character and ASCII 27 is followed by [, then zero or more numbers separated by ; describe the color and format to switch to from that point onwards and finally the letter m. (Here, '1' is for Bold,'3' is for Italic, '4' is for Underline & '\033[m' is to RESET every formatting.)
 	while (1) 
 	{
-		printf("\033[1;32m ||||| YOUR SHELL NAME ||||| :\033[1;34m~\033[1;32m$\033[m "); // shell prompt where \033 is Esc character and ASCII 27 is followed by [, then zero or more numbers separated by ; describe the color and format to switch to from that point onwards and finally the letter m. (Here, '1' is for Bold,'32' is for Green Color for text, '34' is for Blue Color for text & '\033[m' is to RESET every formatting.)
+		printf("\033[1;32mA79 - Vivek Utture:\033[1;34m~\033[1;32m$\033[m "); // shell prompt where \033 is Esc character and ASCII 27 is followed by [, then zero or more numbers separated by ; describe the color and format to switch to from that point onwards and finally the letter m. (Here, '1' is for Bold,'32' is for Green Color for text, '34' is for Blue Color for text & '\033[m' is to RESET every formatting.)
 		fgets(args,MAX_LEN,stdin); // takes a whole line as a input untill "Enter" is pressed 
 		int len=strlen(args); // calculates and stores length of the given command
 		if(len==1)
