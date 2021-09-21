@@ -15,7 +15,7 @@ int main()
 	while (1) 
 	{
 		memset(args,'\0',MAX_LEN); // sets the argument array with 'NULL' values simply 'Nullifies' the argument array
-		printf("\033[1;32m ||||| YOUR SHELL NAME ||||| \033[1;34m~\033[1;32m\033[m$ "); // shell prompt where \033 is Esc character and ASCII 27 is followed by [, then zero or more numbers separated by ; describe the color and format to switch to from that point onwards and finally the letter m. (Here, '1' is for Bold,'32' is for Green Color for text, '34' is for Blue Color for text & '\033[m' is to RESET every formatting.)
+		printf("\033[1;32m ||||| SHELL NAME ||||| \033[1;34m~\033[1;32m\033[m$ "); // shell prompt where \033 is Esc character and ASCII 27 is followed by [, then zero or more numbers separated by ; describe the color and format to switch to from that point onwards and finally the letter m. (Here, '1' is for Bold,'32' is for Green Color for text, '34' is for Blue Color for text & '\033[m' is to RESET every formatting.)
 		fgets(str,MAX_LEN,stdin); // takes a whole line as a input untill "Enter" is pressed 
 		if(strcmp(str,"\n")==0) // even if command is not entered and "Enter" is pressed then the execution will continue with next iteration
 		{
